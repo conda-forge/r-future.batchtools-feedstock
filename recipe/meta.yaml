@@ -1,4 +1,4 @@
-{% set version = '0.7.0' %}
+{% set version = "0.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 {% set cran_mirror = 'https://cran.r-project.org' %}
@@ -12,7 +12,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/future.batchtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/future.batchtools/future.batchtools_{{ version }}.tar.gz
-  sha256: 70fdb365d7eac49e4dbfa6714e97a200f7b35fdb7576b9e20f44e0e78cc6626a
+  sha256: 96c5e6845873473ea4f2a106a904afe8de3e960db0cf746143f561c33fbef755
 
 build:
   merge_build_host: True  # [win]
