@@ -1,4 +1,4 @@
-{% set version = '0.7.2' %}
+{% set version = "0.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/future.batchtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/future.batchtools/future.batchtools_{{ version }}.tar.gz
-  sha256: 87f77d5874edf0770f4064f5f1e85bf14ebdc8dd73bfd731e963f6b9ebd04425
+  sha256: 8bfffa06c776b507320a02032ba96bdafbe04953f02218fb2b5b3eb7604b42bd
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
