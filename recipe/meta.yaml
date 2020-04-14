@@ -1,4 +1,4 @@
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/future.batchtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/future.batchtools/future.batchtools_{{ version }}.tar.gz
-  sha256: 1cec525ef15a06aa811edbef1b9e40d5875c3e873a06119724cd6c764b7b9a0c
+  sha256: 598ff86decf583cb13258c72a8c5a78538a27d9ab1538ab04da4dab437612ceb
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -40,13 +40,11 @@ test:
 about:
   home: https://github.com/HenrikBengtsson/future.batchtools
   license: LGPL (>= 2.1)
-  summary: Implementation of the Future API on top of the 'batchtools' package. This allows you
-    to process futures, as defined by the 'future' package, in parallel out of the box,
-    not only on your local machine or ad-hoc cluster of machines, but also via high-performance
-    compute ('HPC') job schedulers such as 'LSF', 'OpenLava', 'Slurm', 'SGE', and 'TORQUE'
-    / 'PBS', e.g. 'y <- future.apply::future_lapply(files, FUN = process)'.
+  summary: Implementation of the Future API on top of the 'batchtools' package. This allows you to process futures, as defined by the 'future' package, in parallel
+    out of the box, not only on your local machine or ad-hoc cluster of machines, but also via high-performance compute ('HPC') job schedulers such as 'LSF', 'OpenLava',
+    'Slurm', 'SGE', and 'TORQUE' / 'PBS', e.g. 'y <- future.apply::future_lapply(files, FUN = process)'.
   license_family: LGPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 
 extra:
   recipe-maintainers:
