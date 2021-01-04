@@ -5,11 +5,9 @@ Home: https://github.com/HenrikBengtsson/future.batchtools
 
 Package license: LGPL (>= 2.1)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-future.batchtools-feedstock/blob/master/LICENSE.txt)
 
 Summary: Implementation of the Future API on top of the 'batchtools' package. This allows you to process futures, as defined by the 'future' package, in parallel out of the box, not only on your local machine or ad-hoc cluster of machines, but also via high-performance compute ('HPC') job schedulers such as 'LSF', 'OpenLava', 'Slurm', 'SGE', and 'TORQUE' / 'PBS', e.g. 'y <- future.apply::future_lapply(files, FUN = process)'.
-
-
 
 Current build status
 ====================
