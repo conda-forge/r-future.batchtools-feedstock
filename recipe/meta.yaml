@@ -1,6 +1,5 @@
 {% set version = "0.12.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-future.batchtools
@@ -13,8 +12,7 @@ source:
   sha256: db71ea7f239adad3a34d692f1e8b01a6b52653344bc8db30a83b74d08c27d931
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
