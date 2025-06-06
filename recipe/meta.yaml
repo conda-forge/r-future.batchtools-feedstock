@@ -1,4 +1,4 @@
-{% set version = "0.12.1" %}
+{% set version = "0.12.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/future.batchtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/future.batchtools/future.batchtools_{{ version }}.tar.gz
-  sha256: db71ea7f239adad3a34d692f1e8b01a6b52653344bc8db30a83b74d08c27d931
+  sha256: 0b5adeaecc6636038afddf7d4c6edd5ffa54c4ce396f7f2b48db6b23483a94b1
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
