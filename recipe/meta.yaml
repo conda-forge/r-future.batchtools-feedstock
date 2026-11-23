@@ -1,4 +1,4 @@
-{% set version = "0.31.0" %}
+{% set version = "0.32.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/future.batchtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/future.batchtools/future.batchtools_{{ version }}.tar.gz
-  sha256: 9e84704c69afd4bcd99b525ee599f1a1917923be71839ce11d5d2c5c8d82e907
+  sha256: 01e952748fcb024ac761114dd99b585d00d0a6678471c3fb9b0d2a507f0ff815
 
 build:
   number: 0
